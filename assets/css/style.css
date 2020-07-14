@@ -7,9 +7,315 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* Variables */
+:root {
+  --main-font: 'Raleway', sans-serif;
+  --color-primary: #fff;
+  --color-secondary: #EF6F6C;
+  --background-color:  #264653;
+  --header-color: #465775;
+  --btn-color: #2A9D8F;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--main-font);
+  overflow-x: hidden;
+}
+
+/* Preloader */
+.preloader {
+  background: linear-gradient(45deg, var(--background-color), var(--header-color));
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preloader.hidden {
+  -webkit-animation: fadeOut 1s forwards;
+          animation: fadeOut 1s forwards;
+}
+
+.loader-img.hidden {
+  -webkit-animation: trans 1s forwards;
+          animation: trans 1s forwards;
+}
+
+@-webkit-keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes trans {
+  100% {
+    -webkit-transform: translate(-600px, -300px);
+            transform: translate(-600px, -300px);
+  }
+}
+
+@keyframes trans {
+  100% {
+    -webkit-transform: translate(-600px, -300px);
+            transform: translate(-600px, -300px);
+  }
+}
+
+.loader-img {
+  height: 30px;
+  border-radius: 50%;
+  -webkit-animation: load 1.5s  infinite linear;
+          animation: load 1.5s  infinite linear;
+}
+
+@-webkit-keyframes load {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes load {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+/* Dynamic Hamburger Menu */
+.nav-toggle,
+.one,
+.two,
+.three {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.one {
+  -webkit-transform: rotate(45deg) translate(2px, 16px);
+          transform: rotate(45deg) translate(2px, 16px);
+}
+
+.two {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+.three {
+  -webkit-transform: rotate(-45deg) translateY(-14px);
+          transform: rotate(-45deg) translateY(-14px);
+}
+
+.nav-con {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+/* End of Hamburger menu */
+.nav-custom {
+  background: var(--background-color);
+  overflow: hidden;
+}
+
+.nav-custom li {
+  margin: 0 9px;
+}
+
+.nav-custom a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.1rem;
+  color: var(--color-primary) !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nav-custom a:hover {
+  color: var(--color-secondary) !important;
+}
+
+.nav-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-toggle-icon {
+  background-color: var(--color-secondary);
+  width: 4rem;
+  height: 5px;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.btn-nav {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  width: 15rem;
+}
+
+.btn-nav:hover,
+.btn-nav:active {
+  color: var(--color-secondary) !important;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 5.8rem;
+  color: var(--color-primary);
+}
+
+.background-video {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100%;
+  z-index: -1;
+}
+
+.home:before {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(70, 87, 117, 0.8)), to(rgba(239, 111, 108, 0.8)));
+  background: linear-gradient(to right, rgba(70, 87, 117, 0.8), rgba(239, 111, 108, 0.8));
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.home-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 2rem;
+}
+
+.home-text {
+  font-weight: bold;
+  font-size: 4.4rem;
+  line-height: 5.6rem;
+  text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.62);
+  padding-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.notified {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.notified-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 12rem;
+}
+
+.notified-btn p {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.62);
+}
+
+.coming-soon {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-align: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.coming-soon p {
+  margin-bottom: 0;
+  padding-right: 2rem;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.62);
+}
+
+@-webkit-keyframes bounce {
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes bounce {
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+.bounce {
+  -webkit-animation: bounce .8s infinite alternate;
+          animation: bounce .8s infinite alternate;
+}
+
+.bounce:hover svg {
+  fill: var(--btn-color) !important;
 }
 /*# sourceMappingURL=style.css.map */

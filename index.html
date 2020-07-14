@@ -1,45 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.svg"
+      type="image/x-icon"
+    />
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Slick slider -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Saintly</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="./assets/img/Logo.svg" alt="loader" class="loader-img" />
+    </div>
 
+    <!-- Navigation -->
+    <nav
+      class="navbar nav-custom navbar-expand-lg navbar-dark bg-dark fixed-top"
+      id="navbar-example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img class="logo" src="./assets/img/Logo.svg" alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <div class="nav-toggle">
+            <span class="nav-toggle-icon"></span>
+            <span class="nav-toggle-icon"></span>
+            <span class="nav-toggle-icon"></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#get-notified"
+                >GET NOTIFIED <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-it-works">HOW IT WORKS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#religions">SUPPORTED RELIGIONS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+    <!-- Home -->
 
+    <section class="home">
+      <!-- Background video -->
+      <video autoplay loop muted class="background-video">
+        <source src="./assets/img/background.mp4" type="video/mp4" />
+      </video>
+
+      <div
+        class="content h-100 d-flex justify-content-center align-items-center"
+      >
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+            <div class="col-md-4 h-100">
+              <img
+                src="./assets/img/home-phone.png"
+                alt="home-image"
+                class="img-fluid home-img h-100"
+              />
+            </div>
+
+            <div
+              class="col-md-8 h-100 d-flex justify-content-center align-items-center flex-column"
+            >
+              <p class="home-text">
+                IT'S NOT ENOUGH TO BE RELIGIOUS,<br />
+                THE QUESTION IS WILL YOU MAKE<br />
+                <span style="color: var(--btn-color);">HEAVEN</span> OR
+                <span style="color: var(--color-secondary);">HELL</span>
+              </p>
+
+              <div class="notified">
+                <div class="notified-btn">
+                  <p>Get notified on release</p>
+                  <a href="#get-notified" type="button" class="bounce">
+                    <svg
+                      width="60"
+                      height="60"
+                      viewBox="0 0 60 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="30"
+                        cy="30"
+                        r="29"
+                        stroke="white"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5455 28.6824C17.7179 28.5095 17.9228 28.3723 18.1484 28.2787C18.374 28.1851 18.6158 28.1369 18.86 28.1369C19.1042 28.1369 19.3461 28.1851 19.5716 28.2787C19.7972 28.3723 20.0021 28.5095 20.1746 28.6824L30.0002 38.5118L39.8259 28.6824C40.1746 28.3337 40.6474 28.1379 41.1405 28.1379C41.6335 28.1379 42.1064 28.3337 42.455 28.6824C42.8037 29.031 42.9995 29.5039 42.9995 29.9969C42.9995 30.49 42.8037 30.9628 42.455 31.3115L31.3148 42.4517C31.1423 42.6246 30.9374 42.7618 30.7119 42.8554C30.4863 42.949 30.2445 42.9972 30.0002 42.9972C29.756 42.9972 29.5142 42.949 29.2886 42.8554C29.0631 42.7618 28.8582 42.6246 28.6857 42.4517L17.5455 31.3115C17.3726 31.139 17.2354 30.9341 17.1418 30.7085C17.0482 30.483 17 30.2411 17 29.9969C17 29.7527 17.0482 29.5109 17.1418 29.2853C17.2354 29.0597 17.3726 28.8548 17.5455 28.6824Z"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M30.0002 17C30.4927 17 30.9649 17.1956 31.3131 17.5438C31.6613 17.892 31.8569 18.3643 31.8569 18.8567V37.4237C31.8569 37.9162 31.6613 38.3884 31.3131 38.7366C30.9649 39.0848 30.4927 39.2804 30.0002 39.2804C29.5078 39.2804 29.0356 39.0848 28.6874 38.7366C28.3392 38.3884 28.1435 37.9162 28.1435 37.4237V18.8567C28.1435 18.3643 28.3392 17.892 28.6874 17.5438C29.0356 17.1956 29.5078 17 30.0002 17Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="coming-soon">
+                  <p>COMING SOON <br />JUNE 2025</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature -->
+    <section  style="height: 100vh; padding-top: 58px;">
+        <h1 id="get-notified">Get Notified</h1>
+      Lorem ipsum dolor sit amet consectetur adirrupti debitis, in velit hic
+      blanditiis. Sequi hic tempore obcaecati quam architecto, ab saepe odit
+      alias est, esse accusamus, ipsum sapiente culpa vitae nisi voluptatum
+      inventore! Odio tempora est, nobis iure recusandae, debitis quam eius
+      provident, ipsum totam quae accusamus impedit cumque sunt. Dolorum
+      voluptas quos eum ipsam voluptate tempore aliquid labore reprehenderit nam
+      odit soluta magnam nisi nulla, tempora, exercitationem suscipit natus
+      voluptatem doloribus? Cumque, provident exercitationem ad officia
+      similique facere ipsam. Ullam a unde eum minus magni suscipit explicabo,
+      at ipsa natus repudiandae ea nemo modi asperiores velit commodi provident
+      quod soluta quis dolorem recusandae. Recusandae dignissimos soluta nihil,
+      ducimus suscipit sequi nesciunt sed pariatur voluptates libero in eum
+      molestiae? Cum deleniti aut reiciendis odit optio assumenda repellendus
+      quaerat iure similique tenetur libero quo molestias, ipsa quod maxime
+      tempora officia illo at corrupti. Sed quod minima quibusdam impedit! Eos
+      ipsum saepe eius, fuga error quidem tempore architecto nihil labore
+      molestias earum voluptates quam quasi est maxime harum qui maiores nostrum
+      laudantium ullam nisi ipsa voluptas! Quidem sed a reiciendis placeat
+      asperiores autem omnis hic vitae ipsa repellat officia id aliquam, velit
+      nemo at? Voluptatibus excepturi at delectus. Quasi eos perspiciatis fugit,
+      accusamus atque beatae vel sit accusantium quidem mollitia officiis odit
+      voluptatem? Deleniti, molestias soluta ad inventore molestiae perferendis
+      pariatur, magni corrupti quas voluptatem illum hic recusandae, a dicta
+      numquam repellendus dignissimos? Sunt, mollitia magnam commodi praesentium
+      earum repellat vero. Omnis error odio mollitia quasi odit reiciendis,
+      inventore id quidem numquam soluta porro, laborum et distinctio aliquid
+      alias dignissimos repellendus consequatur in cum fugit. Nam sit mollitia
+      possimus eligendi nulla, fuga sunt praesentium unde recusandae deleniti
+      labore doloremque aut reprehenderit ea consequuntur quas magni! Quaerat
+      architecto iste fuga deleniti iure quam consectetur. Assumenda, dicta
+      fugiat dolorem quo saepe dolorum explicabo minus accusantium inventore
+      commodi nulla suscipit asperiores facere voluptatibus doloremque quibusdam
+      quisquam sequi deleniti expedita, vero quod distinctio necessitatibus.
+      Praesentium, excepturi dignissimos. Iste odit fugiat odio eligendi! Illo
+      repudiandae amet est recusandae praesentium corporis quia, voluptatum
+      quibusdam delectus odio eius consequatur quis nihil nulla, facilis ratione
+      quo, voluptate omnis rem! Delectus nam laudantium nihil, at velit eum iste
+      iure recusandae quod porro officia asperiores nemo aspernatur blanditiis.
+      Ipsa voluptas sed ea natus distinctio quo eligendi consequuntur qui est
+      exercitationem magni, repellendus facilis quos. Porro molestias,
+      doloremque officiis sunt velit eligendi animi at odit dolores blanditiis
+      obcaecati voluptatum vitae accusantium cum temporibus maiores, earum,
+      quaerat aperiam veritatis mollitia facilis qui aliquid! Quia vel magni
+      nihil voluptates cumque amet praesentium aut impedit blanditiis? Molestias
+      placeat quidem quos amet asperiores corporis enim, magnam ipsam obcaecati
+      optio laudantium tempora cum at distinctio harum dolore ab libero. Ullam
+      sit consectetur incidunt ea sunt. Sunt iste aspernatur quaerat quisquam,
+      amet ex sed atque in hic fugit eos quae dolores, excepturi eveniet
+      perspiciatis. Magnam numquam quod facere ex accusantium nulla quia
+      doloremque ducimus beatae voluptas dolor, quas tempora ad excepturi non!
+      Eum natus quod tempore reprehenderit maxime, minima repellat nihil neque
+      ea ducimus, provident illum eos omnis accusantium hic atque dicta commodi
+      corporis minus magni. Eveniet provident eum tempore vero tempora
+      voluptates minus, non recusandae, sunt, similique nisi aperiam! Dicta
+      perspiciatis atque voluptas quos quas quaerat fugiat consequatur magni.
+      Amet quam omnis quidem porro, unde totam quas quod animi facere voluptate
+      dicta magnam molestias nostrum qui nulla quo ullam. Placeat dolores
+      voluptate asperiores temporibus facere debitis consectetur saepe, magni
+      deserunt fugit repellat fuga perferendis explicabo, eum architecto libero
+      autem obcaecati unde voluptates id at, ullam esse suscipit iste. Iste,
+      repellat vel dicta numquam corrupti voluptatem amet dolores magni modi
+      possimus quaerat perferendis molestias dignissimos deserunt minus quasi ex
+      illo est, reprehenderit molestiae nihil perspiciatis? Odit iste commodi
+      perspiciatis labore in debitis velit eaque asperiores! Incidunt non natus
+      quis fuga dolorem corporis amet, repellat eligendi modi iure. Earum,
+      cumque totam. Itaque quis minima aperiam ipsa, ut nobis a eligendi
+      voluptate quae id provident commodi aspernatur quaerat soluta hic libero,
+      necessitatibus molestias obcaecati earum perferendis consectetur quam
+      quasi reiciendis. Ullam dicta pariatur soluta perspiciatis accusantium
+      fugit quo labore? Voluptatem cupiditate illum aspernatur sequi culpa,
+      quisquam voluptates possimus! Dignissimos, quibusdam similique vero in
+      labore voluptas commodi? Ab assumenda dolor nemo reiciendis nihil autem,
+      architecto blanditiis corrupti sed voluptates quo asperiores totam at
+      voluptate, excepturi cum laudantium ratione? Id harum nisi saepe quia
+      temporibus tempore, voluptatibus sit ipsum cum inventore voluptates! Error
+      alias sed dolorum saepe obcaecati, distinctio vero illum vitae recusandae!
+      Non at aliquam natus, quidem aut ratione asperiores ab repellendus itaque
+      autem iure inventore dignissimos facilis quis vero molestiae pariatur
+      dolor tempora maiores? Doloremque fugit cum dicta nemo. Vel facere vero
+      explicabo autem obcaecati. Saepe architecto, commodi explicabo sunt
+      suscipit officiis aspernatur minima velit dolore alias! Voluptatem
+      consectetur, officiis neque praesentium sapiente reiciendis.
+      Reprehenderit, cumque? Atque aut cupiditate recusandae adipisci numquam
+      culpa ratione beatae facere, tempora quisquam explicabo dolorum earum rem
+      ipsum quam temporibus? Distinctio culpa, veniam dolorem reprehenderit nisi
+      consectetur. Sed, est, eaque molestias quae ducimus, quo iste vel id
+      accusamus expedita eius voluptate excepturi odit officiis dolore atque hic
+      quod. Est at consectetur dolorem eius aliquam harum reiciendis, libero
+      quaerat debitis minus laudantium obcaecati aut consequatur commodi
+      repellat illo. Perferendis nemo modi unde aperiam corporis in assumenda
+      sed rem nulla qui debitis nam ducimus minus a id, facilis sunt suscipit
+      repellendus quisquam eos officia doloremque eveniet pariatur dolorum?
+      Ipsam, dolore iste excepturi recusandae enim rem inventore mollitia, quasi
+      sint corrupti et, saepe animi voluptates at maxime nostrum tenetur!
+      Explicabo quidem, repellat eveniet iure modi ullam dignissimos nihil
+      incidunt iste. Voluptatibus nesciunt nemo excepturi maxime! Adipisci
+      reprehenderit nostrum molestias quasi dolorum eos? Et laudantium, nostrum
+      maxime voluptate tempore maiores aspernatur quisquam nulla debitis beatae
+      vel aperiam facere quasi eos aut quas aliquid ducimus vero laboriosam
+      temporibus, eaque voluptatibus amet? Vero, suscipit! Quo cupiditate
+      obcaecati inventore aperiam laborum excepturi consequuntur minus repellat
+      magni veritatis. Dolore, voluptate soluta fuga doloremque ipsam dolorem
+      harum veniam maiores, commodi quas doloribus maxime libero quisquam animi.
+      Ea earum id excepturi inventore commodi harum voluptates molestiae omnis
+      quas aliquid. Laudantium, sequi dolorum? Excepturi libero accusantium
+      aperiam ullam, porro sequi ab odio minus culpa sit consequatur in
+      necessitatibus tenetur voluptatum officia aut doloribus. Doloremque,
+      officia. Sint, dolorum libero. Eveniet quasi itaque corporis quo sit, ad
+      perferendis labore porro, quisquam aliquam necessitatibus consectetur
+      totam inventore similique! Optio animi repellendus laudantium qui quidem
+      quo at dolores omnis corrupti, debitis aperiam! Repellendus non repellat
+      assumenda error ipsum dolore alias magni delectus illo, ipsam
+      reprehenderit eum minus? Placeat laboriosam veniam beatae deserunt sit
+      deleniti. Sint illum qui eveniet quo voluptatum consequatur eligendi
+      impedit est beatae aliquam itaque sequi, dolore consectetur dignissimos
+      natus incidunt laboriosam perspiciatis ab facilis dolor fugiat quia?
+      Expedita eaque nisi porro dolor repudiandae adipisci distinctio nemo nihil
+      quis incidunt explicabo unde voluptatibus quibusdam at pariatur amet
+      cupiditate vel ipsa, ipsum qui fugiat neque quasi voluptatum?
+      Exercitationem maiores provident consequuntur inventore adipisci earum,
+      cupiditate ipsam libero labore sed eos obcaecati eaque sint repellat esse
+      laboriosam maxime quis facere molestias eius placeat commodi corporis.
+      Odit ad aspernatur ipsum veniam nulla minus, sed molestias nesciunt
+      deserunt hic magni velit, voluptatem sunt? Dolorem iure sint dolores.
+      Corrupti, esse obcaecati harum neque laborum rerum sequi, voluptatum
+      minima iure earum accusamus quod. Quaerat numquam illo commodi unde
+      ratione tenetur distinctio deleniti doloribus. Suscipit aut, voluptatibus
+      similique temporibus quo sed quod unde corrupti exercitationem consectetur
+      iste magnam autem necessitatibus tempora reiciendis!
+    </section>
 
     <!-- Boostrap JS -->
     <script src="./assets/js/popper.js"></script>
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/bootstrap.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/custom.js"></script>
     <!-- Typed JS -->
     <script src="./assets/js/typed.js"></script>
     <!-- slick slider -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1000
-        });
-      </script>
-
-</body>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+  </body>
 </html>
