@@ -237,6 +237,15 @@ body {
   padding-top: 2rem;
 }
 
+.typecon {
+  height: 40rem !important;
+}
+
+.typed-cursor {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .home-text {
   font-weight: bold;
   font-size: 4.4rem;
@@ -244,7 +253,7 @@ body {
   text-align: center;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.62);
   padding-top: 10rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .notified {
