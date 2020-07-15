@@ -98,7 +98,7 @@
       >
         <div class="container-fluid h-100">
           <div class="row h-100">
-            <div class="col-md-4 h-100">
+            <div class="col-md-4 h-100" id="mobile-container">
               <img
                 src="./assets/img/home-phone.png"
                 alt="home-image"
@@ -109,17 +109,14 @@
             <div
               class="col-md-8 h-100 d-flex justify-content-center align-items-center flex-column"
             >
-
-            <div class="typecon">
-
-              <p class="home-text type">
+              <div class="typecon">
+                <p class="home-text type">
                   IT'S NOT ENOUGH TO BE RELIGIOUS,<br />
                   THE QUESTION IS WILL YOU MAKE<br />
                   <span style="color: var(--btn-color);">HEAVEN</span> OR
                   <span style="color: var(--color-secondary);">HELL</span>?
-              </p>
-            </div>
-            
+                </p>
+              </div>
 
               <div class="notified">
                 <div class="notified-btn">
@@ -164,19 +161,287 @@
       </div>
     </section>
 
-    <!-- Feature -->
-    <section  style="height: 100vh; padding-top: 58px;">
-        <h1 id="get-notified">Get Notified</h1>
-      Lorem ipsum dolor sit amet consectetur adirrupti debitis, in velit hic
-      blanditiis. Sequi hic tempore obcaecati quam architecto, ab saepe odit
-      alias est, esse accusamus, ipsum sapiente culpa vitae nisi voluptatum
-      inventore! Odio tempora est, nobis iure recusandae, debitis quam eius
-      provident, ipsum totam quae accusamus impedit cumque sunt. Dolorum
-      voluptas quos eum ipsam voluptate tempore aliquid labore reprehenderit nam
-      odit soluta magnam nisi nulla, tempora, exercitationem suscipit natus
-      voluptatem doloribus? Cumque, provident exercitationem ad officia
-      similique facere ipsam. Ullam a unde eum minus magni suscipit explicabo, possimus quaerat perferendis 
+    <!-- Get notified form -->
+    <section class="get-notified">
+      <h1 id="get-notified" class="sr-only">Get Notified</h1>
+
+      <p class="text-center">
+        ENTER YOUR EMAIL TO BE NOTIFIED WHEN<br />
+        <span style="color: var(--color-secondary);">SAINTLY</span> IS READY TO
+        TRY OUT
+      </p>
+
+      <form method="post" class="form-inline">
+        <label for="email" class="sr-only">Email</label>
+        <div class="input-group">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter Your Email"
+          />
+          <div class="input-group-append">
+            <input type="submit" value="NOTIFY ME" class="form-control" />
+          </div>
+        </div>
+      </form>
     </section>
+
+    <!-- FEATURES -->
+
+    <section class="features">
+      <div class="container">
+        <div class="features-heading container">
+          <p>FEATURES</p>
+
+          <img src="./assets/img/underline.svg" alt="underline" />
+        </div>
+      </div>
+
+      <div class="container">
+        <img
+          src="./assets/img/Features.svg"
+          class="img-fluid"
+          alt="App features"
+        />
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="works">
+      <div class="container">
+        <div class="features-heading container">
+          <p>HOW IT WORKS</p>
+
+          <img src="./assets/img/underline.svg" alt="underline" />
+        </div>
+      </div>
+
+      <div class="container">
+        <article class="first">
+          <div class="row">
+            <div class="col-5">
+              <p class="number">01.</p>
+            </div>
+            <div class="col-2">
+              <img src="./assets/img/vertical.svg" alt="divider" />
+            </div>
+            <div class="col-5">
+              <p>
+                <span class="first-text">User</span>
+                <span class="second-text">Authentication</span>
+              </p>
+              <br />
+
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Interdum velit in mi sed dictum varius elementum velit eleifend.
+                Neque malesuada nulla nunc mauris hendrerit fringilla dignissim
+                sed. Ut dignissim vel a quam. Fermentum diam ac, etiam lectus
+                nulla blandit.
+              </p>
+            </div>
+          </div>
+
+          <div class="divider">
+            <img src="./assets/img/horizontal.svg" alt="divider" />
+            <img src="./assets/img/bullet.svg" alt="bullet" />
+            <img src="./assets/img/horizontal.svg" alt="divider" />
+          </div>
+        </article>
+
+        <article class="second">
+          <div class="row">
+            <div class="col-5">
+              <p>
+                <span class="first-text">Data</span>
+                <span class="second-text">Fetching</span>
+              </p>
+              <br />
+
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Interdum velit in mi sed dictum varius elementum velit eleifend.
+                Neque malesuada nulla nunc mauris hendrerit fringilla dignissim
+                sed. Ut dignissim vel a quam. Fermentum diam ac, etiam lectus
+                nulla blandit.
+              </p>
+            </div>
+            <div class="col-2">
+              <img src="./assets/img/vertical.svg" alt="divider" />
+            </div>
+            <div class="col-5">
+              <p class="number">02.</p>
+            </div>
+          </div>
+
+          <div class="divider">
+            <img src="./assets/img/horizontal.svg" alt="divider" />
+            <img src="./assets/img/bullet.svg" alt="bullet" />
+            <img src="./assets/img/horizontal.svg" alt="divider" />
+          </div>
+        </article>
+
+        <article class="first">
+          <div class="row">
+            <div class="col-5">
+              <p class="number">03.</p>
+            </div>
+            <div class="col-2">
+              <img src="./assets/img/vertical.svg" alt="divider" />
+            </div>
+            <div class="col-5">
+              <p>
+                <span class="first-text">Verdict</span>
+                <span class="second-text">Results</span>
+              </p>
+              <br />
+
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Interdum velit in mi sed dictum varius elementum velit eleifend.
+                Neque malesuada nulla nunc mauris hendrerit fringilla dignissim
+                sed. Ut dignissim vel a quam. Fermentum diam ac, etiam lectus
+                nulla blandit.
+              </p>
+            </div>
+          </div>
+
+          <div class="divider">
+            <img src="./assets/img/horizontal.svg" alt="divider" />
+            <img src="./assets/img/bullet.svg" alt="bullet" />
+            <img src="./assets/img/horizontal.svg" alt="divider" />
+          </div>
+        </article>
+
+        <article class="second">
+          <div class="row">
+            <div class="col-5">
+              <p>
+                <span class="first-text">Convert</span>
+                <span class="second-text">Now</span>
+              </p>
+              <br />
+
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Interdum velit in mi sed dictum varius elementum velit eleifend.
+                Neque malesuada nulla nunc mauris hendrerit fringilla dignissim
+                sed. Ut dignissim vel a quam. Fermentum diam ac, etiam lectus
+                nulla blandit.
+              </p>
+            </div>
+            <div class="col-2">
+              <img src="./assets/img/vertical.svg" alt="divider" />
+            </div>
+            <div class="col-5">
+              <p class="number">04.</p>
+            </div>
+          </div>
+
+          <div class="divider">
+            <img src="./assets/img/horizontal.svg" alt="divider" />
+            <img src="./assets/img/bullet.svg" alt="bullet" />
+            <img src="./assets/img/horizontal.svg" alt="divider" />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SCREENSHOTS -->
+
+    <section class="screenshots">
+      <div class="features-heading container">
+        <p>SCREENSHOTS</p>
+
+        <img src="./assets/img/underline.svg" alt="underline" />
+      </div>
+
+      <div class="screens">
+        <img src="./assets/img/SCREENS.svg" class="img-fluid" alt="screens" />
+      </div>
+    </section>
+
+    <!-- RELIGIONS -->
+
+    <section class="religions">
+      <div class="features-heading container">
+        <p id="religions">SUPPORTED RELIGIONS</p>
+
+        <img src="./assets/img/underline.svg" alt="underline" />
+      </div>
+
+      <div class="container">
+        
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="./assets/img/christian.svg" alt="Card image cap">
+            <div class="card-body">
+              <p>CHRISTIANITY</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="./assets/img/islam.svg" alt="Card image cap">
+            <div class="card-body">
+              <p>ISLAM</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="./assets/img/buddhism.svg" alt="Card image cap">
+            <div class="card-body">
+              <p>BUDDHISM</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="./assets/img/hinduism.svg" alt="Card image cap">
+            <div class="card-body">
+              <p>HINDUISM</p>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="card-deck mt-5">
+          <div class="card">
+            <img class="card-img-top" src="./assets/img/taoism.svg" alt="Card image cap">
+            <div class="card-body">
+              <p>TAOISM</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="./assets/img/shinto.svg" alt="Card image cap">
+            <div class="card-body">
+              <p>SHINTO</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="./assets/img/sikhism.svg" alt="Card image cap">
+            <div class="card-body">
+              <p>SIKHISM</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="./assets/img/judaism.svg" alt="Card image cap">
+            <div class="card-body">
+              <p>JUDAISM</p>
+            </div>
+          </div>
+          
+        </div>
+
+
+
+
+      </div>
+    </section>
+
+    <section class="footer"></section>
 
     <!-- Boostrap JS -->
     <script src="./assets/js/popper.js"></script>
@@ -186,13 +451,19 @@
     <!-- Typed JS -->
     <script src="./assets/js/typed.js"></script>
     <script type="text/javascript">
-        var typed = new Typed('.type', {
-          strings: ["IT'S NOT ENOUGH TO BE RELIGIOUS,<br />THE QUESTION IS WILL YOU MAKE<br /><span style=\"color: var(--btn-color);\">HEAVEN</span> OR <span style=\"color: var(--color-secondary);\">HELL</span>?","IT'S NOT ENOUGH TO BE RELIGIOUS,<br />THE QUESTION IS WILL YOU MAKE<br /><span style=\"color: var(--btn-color);\">HEAVEN</span> OR <span style=\"color: var(--color-secondary);\">HELL</span>?", "Saintly App tells you with 100% certainty if you are worthy of <span style=\"color: var(--btn-color);\">Eternal life</span> or <span style=\"color: var(--color-secondary);\">not</span>!"],
-  typeSpeed: 50,
-  backSpeed: 50,
-  fadeOut: true,
-  fadeOutDelay: 500,
-        });
+      var typed = new Typed('.type', {
+        strings: [
+          'IT\'S NOT ENOUGH TO BE RELIGIOUS,<br />THE QUESTION IS WILL YOU MAKE<br /><span style="color: var(--btn-color);">HEAVEN</span> OR <span style="color: var(--color-secondary);">HELL</span>?',
+          'IT\'S NOT ENOUGH TO BE RELIGIOUS,<br />THE QUESTION IS WILL YOU MAKE<br /><span style="color: var(--btn-color);">HEAVEN</span> OR <span style="color: var(--color-secondary);">HELL</span>?',
+          'Saintly App tells you with 100% certainty if you are worthy of <span style="color: var(--btn-color);">Eternal life</span> or <span style="color: var(--color-secondary);">not</span>!',
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        fadeOut: true,
+        fadeOutDelay: 500,
+        loop: true,
+        loopCount: 2,
+      });
     </script>
     <!-- slick slider -->
     <script
@@ -206,7 +477,7 @@
         duration: 1000,
       });
     </script>
-        <!-- Custom JS -->
-        <script src="./assets/js/custom.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/custom.js"></script>
   </body>
 </html>

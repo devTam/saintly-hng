@@ -23,6 +23,7 @@ html {
 body {
   font-family: var(--main-font);
   overflow-x: hidden;
+  background-color: #E5E5E5;
 }
 
 /* Preloader */
@@ -326,5 +327,186 @@ body {
 
 .bounce:hover svg {
   fill: var(--btn-color) !important;
+}
+
+.get-notified {
+  padding-top: 58px;
+  background-color: var(--background-color);
+  color: var(--color-primary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 58px;
+}
+
+.get-notified p {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.get-notified input[type=email] {
+  width: 43.6rem;
+  height: 5rem;
+  background-color: #F1F1F1;
+  border-radius: 5px 0px 0px 5px;
+  font-size: 1.8rem;
+}
+
+.get-notified ::-webkit-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  color: rgba(11, 11, 11, 0.8);
+}
+
+.get-notified :-ms-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  color: rgba(11, 11, 11, 0.8);
+}
+
+.get-notified ::-ms-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  color: rgba(11, 11, 11, 0.8);
+}
+
+.get-notified ::placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  color: rgba(11, 11, 11, 0.8);
+}
+
+.get-notified input[type=submit] {
+  width: 15rem;
+  height: 5rem;
+  background-color: var(--btn-color);
+  border-radius: 0px 5px 5px 0px;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.features {
+  padding-top: 5.8rem;
+  background-color: E5E5E5;
+}
+
+.features-heading {
+  color: var(--header-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.features-heading p {
+  font-size: 2.4rem;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+}
+
+.col-5 .number {
+  font-weight: bold;
+  font-size: 25rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(42, 157, 143, 0.1);
+  line-height: 29.3rem;
+}
+
+.first-text, .second-text {
+  color: var(--color-secondary);
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+}
+
+.second-text {
+  color: var(--btn-color);
+  margin-left: 5px;
+}
+
+.col-5, .col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.col-5 > p {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.desc {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0.03em;
+}
+
+.screenshots {
+  padding-top: 5.8rem;
+  background: url("../img/rect.svg");
+}
+
+.card-body {
+  background-color: var(--background-color);
+  color: var(--color-primary);
+}
+
+.card-body p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 992px) {
+  #mobile-container {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
