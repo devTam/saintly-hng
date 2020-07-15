@@ -239,7 +239,7 @@ body {
 }
 
 .typecon {
-  height: 40rem !important;
+  height: 20rem !important;
 }
 
 .typed-cursor {
@@ -253,8 +253,79 @@ body {
   line-height: 5.6rem;
   text-align: center;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.62);
-  padding-top: 10rem;
-  margin-bottom: 5rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.coming-soon {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.coming-soon p:nth-child(1) {
+  margin-bottom: 0;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.62);
+}
+
+.coming-soon p:nth-child(2) {
+  font-size: 3.6rem;
+  margin-bottom: 0;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.62);
+}
+
+#timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#timer .time {
+  margin: 8px;
+}
+
+#timer .time .number {
+  background-color: var(--btn-color);
+  border: 2px solid #fff;
+  padding: 2px;
+  height: 7rem;
+  width: 7rem;
+  font-size: 3.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#timer .time .alpha {
+  margin-top: 4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.62);
+}
+
+#timer .column {
+  font-size: 6.4rem !important;
+  font-weight: bold;
+  -webkit-transform: translateY(-13px);
+          transform: translateY(-13px);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.62);
 }
 
 .notified {
@@ -288,21 +359,6 @@ body {
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.03em;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.62);
-}
-
-.coming-soon {
-  font-size: 1.8rem;
-  font-weight: bold;
-  letter-spacing: 0.03em;
-  text-align: center;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.coming-soon p {
-  margin-bottom: 0;
-  padding-right: 2rem;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.62);
 }
 
@@ -427,6 +483,10 @@ body {
   font-weight: bold;
 }
 
+.works {
+  padding-top: 5.8rem;
+}
+
 .col-5 .number {
   font-weight: bold;
   font-size: 25rem;
@@ -489,8 +549,21 @@ body {
 }
 
 .screenshots {
-  padding-top: 5.8rem;
+  margin-top: 10rem;
   background: url("../img/rect.svg");
+  background-repeat: no-repeat;
+}
+
+.screenshot {
+  padding-top: 5.8rem;
+}
+
+.screens {
+  padding-bottom: 26rem;
+}
+
+.religions {
+  padding-top: 5.8rem;
 }
 
 .card-body {
@@ -502,6 +575,62 @@ body {
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
+}
+
+.footer {
+  margin-top: 5.8rem;
+  background-color: var(--background-color);
+  color: var(--color-primary);
+}
+
+.footer p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.footer span {
+  font-size: 1.6rem;
+}
+
+.touch, .call, .social {
+  padding: 3rem 8rem;
+  text-align: center;
+}
+
+.touch-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.touchspan {
+  margin-bottom: 0;
+  margin-left: 4px;
+  font-weight: normal !important;
+}
+
+.social {
+  padding-right: 0;
+}
+
+.media-icons img {
+  margin: 0 2rem;
+}
+
+.second-footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.second-footer span {
+  margin: 0 5px;
+  font-size: 1.4rem;
 }
 
 @media only screen and (max-device-width: 992px) {

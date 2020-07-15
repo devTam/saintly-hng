@@ -189,6 +189,7 @@ body {
     height: 100%;
 }
 
+
 .home-img {
     // box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
     object-fit: cover;
@@ -196,7 +197,7 @@ body {
 }
 
 .typecon {
-  height: 40rem!important;
+  height: 20rem!important;
 }
 
 // typed
@@ -211,8 +212,70 @@ body {
     line-height: 5.6rem;
     text-align: center;
     text-shadow: 2px 2px rgba(0,0,0,0.62);
-    padding-top: 10rem;
-    margin-bottom: 5rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.coming-soon {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 8rem;
+
+  
+  p:nth-child(1) {
+      margin-bottom: 0;
+      text-shadow: 2px 2px rgba(0,0,0,0.62);
+  }
+  p:nth-child(2) {
+    font-size: 3.6rem;
+      margin-bottom: 0;
+      text-shadow: 2px 2px rgba(0,0,0,0.62);
+  }
+}
+
+// TIMER
+
+#timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .time {
+    margin: 8px;
+
+    .number {
+      background-color: var(--btn-color);
+      border: 2px solid #fff;
+      padding: 2px;
+      height: 7rem;
+      width: 7rem;
+      font-size: 3.2rem;
+      font-weight: bold;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .alpha {
+      margin-top: 4px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 2px 2px rgba(0,0,0,0.62);
+    }
+
+    
+  }
+
+  .column {
+    font-size: 6.4rem !important;
+    font-weight: bold;
+    transform: translateY(-13px);
+    text-shadow: 2px 2px rgba(0,0,0,0.62);
+  }
 }
 
 .notified {
@@ -240,19 +303,7 @@ body {
     }
 }
 
-.coming-soon {
-    font-size: 1.8rem;
-    font-weight: bold;
-    letter-spacing: 0.03em;
-    text-align: center;
-    align-self: flex-end;
-    
-    p {
-        margin-bottom: 0;
-        padding-right: 2rem;
-        text-shadow: 2px 2px rgba(0,0,0,0.62);
-    }
-}
+
 
 // Animation for home button
 @keyframes bounce {
@@ -342,6 +393,10 @@ body {
 
 // HOW IT WORKS
 
+.works {
+  padding-top: 5.8rem;
+}
+
 .col-5 .number {
   font-weight: bold;
   font-size: 25rem;
@@ -394,14 +449,28 @@ body {
 // SCREENSHOTS
 
 .screenshots {
-  padding-top: 5.8rem;
+  margin-top: 10rem;
   background: url("../img/rect.svg");
+  background-repeat: no-repeat;
+}
+
+.screenshot {
+  padding-top: 5.8rem;
+}
+
+.screens {
+  padding-bottom: 26rem;
+
 }
 
 
 
 
 // SUPPORTED RELIGION
+
+.religions {
+  padding-top: 5.8rem;
+}
 
 .card-body {
   background-color: var(--background-color);
@@ -411,6 +480,60 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
+  }
+}
+
+// Footer
+
+.footer {
+  margin-top: 5.8rem;
+  background-color: var(--background-color);
+  color: var(--color-primary);
+
+  & p {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  & span {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+.touch, .call, .social {
+  padding: 3rem 8rem;
+  text-align: center;
+}
+
+.touch-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.touchspan {
+  margin-bottom: 0;
+  margin-left: 4px;
+  font-weight: normal!important;
+}
+
+.social {
+  padding-right: 0;
+}
+
+.media-icons img {
+  margin: 0 2rem;
+}
+
+.second-footer {
+  text-align: center;
+  padding-bottom: 2rem;
+
+  & span {
+    margin: 0 5px;
+    font-size: 1.4rem;
   }
 }
 
