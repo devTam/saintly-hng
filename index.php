@@ -1,7 +1,7 @@
-<!-- <?php
+<?php
 //including the php page that will process the form
 include('process_form.php');
-?> -->
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -194,14 +194,14 @@ include('process_form.php');
         TRY OUT
       </p>
 
-      <!-- <?php
+      <?php
       if(isset($success)){
         echo '<div class="alert alert-success" role="alert" style="font-size: 2rem;">' . $success . '</div>';
       }elseif(isset($error)){
         echo '<div class="alert alert-danger" role="alert" style="font-size: 2rem;">' . $error . '</div>';
       }
       
-    ?> -->
+    ?>
 
       <form method="post" class="form-inline" data-aos="fade-up">
         <label for="email" class="sr-only">Email</label>
