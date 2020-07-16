@@ -532,6 +532,11 @@ body {
   color: #fff;
 }
 
+// Mobile carousel
+.carousel-item img {
+  height: 500px;
+}
+
 
 // SUPPORTED RELIGION
 
@@ -681,6 +686,8 @@ body {
   .input-group {
     width: 60.5rem;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .notify-btn {

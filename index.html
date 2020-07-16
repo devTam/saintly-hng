@@ -18,17 +18,6 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.css" />
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Slick slider -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Saintly</title>
@@ -369,7 +358,7 @@
 
     <!-- SCREENSHOTS -->
 
-    <section class="screenshots">
+    <section class="screenshots ">
       <div class="features-heading container screenshot" id="screenshots">
         <p>SCREENSHOTS</p>
 
@@ -380,7 +369,7 @@
         />
       </div>
 
-      <div class="screens">
+      <div class="screens d-none d-lg-flex">
         <!-- <img src="./assets/img/SCREENS.svg" class="img-fluid" alt="screens" /> -->
         <a href="" class="screen1" data-toggle="modal"
         data-target="#screen1"
@@ -572,6 +561,31 @@
 
 
       </div>
+
+      <div class="mobile-screen d-lg-none">
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./assets/img/features1.svg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/img/features2.svg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/img/features3.svg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/img/features4.svg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/img/features5.svg" alt="Third slide">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </section>
 
     <!-- RELIGIONS -->
@@ -749,11 +763,6 @@
         loopCount: 2,
       });
     </script>
-    <!-- slick slider -->
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
