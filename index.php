@@ -32,7 +32,7 @@ include('process_form.php');
   <body>
     <!-- Preloader -->
     <div class="preloader">
-      <img src="./assets/img/Logo.svg" alt="loader" class="loader-img" />
+      <img src="./assets/img/logo.svg" alt="loader" class="loader-img" />
     </div>
 
     <!-- Navigation -->
