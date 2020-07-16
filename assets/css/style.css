@@ -445,6 +445,12 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   color: #ffffff;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+.get-notified input[type='submit']:hover {
+  background-color: var(--color-secondary);
 }
 
 .features {
@@ -653,6 +659,7 @@ body {
   height: 500px;
   background: none;
   width: 400px;
+  border: none;
 }
 
 .modal-header {
