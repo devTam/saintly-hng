@@ -6,8 +6,8 @@
 }
 
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 /* Variables */
@@ -189,15 +189,9 @@ body {
   border: none;
 }
 
-.btn-nav {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
-  width: 15rem;
-}
-
-.btn-nav:hover,
-.btn-nav:active {
-  color: var(--color-secondary) !important;
+.nav-item {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .home {
@@ -386,7 +380,7 @@ body {
 }
 
 .get-notified {
-  padding-top: 58px;
+  padding-top: 5.8rem;
   background-color: var(--background-color);
   color: var(--color-primary);
   display: -webkit-box;
@@ -402,11 +396,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 58px;
+  padding-bottom: 5.8rem;
 }
 
 .get-notified p {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
   color: var(--color-primary);
 }
@@ -448,7 +442,7 @@ body {
   height: 5rem;
   background-color: var(--btn-color);
   border-radius: 0px 5px 5px 0px;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   color: #FFFFFF;
@@ -633,9 +627,39 @@ body {
   font-size: 1.4rem;
 }
 
-@media only screen and (max-device-width: 992px) {
-  #mobile-container {
-    display: none !important;
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mobile-home {
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+  }
+  .notified {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .notified-btn {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 40%;
   }
 }
 /*# sourceMappingURL=style.css.map */
