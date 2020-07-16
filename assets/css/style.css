@@ -30,7 +30,6 @@ body {
 .preloader {
   background: linear-gradient(45deg, var(--background-color), var(--header-color));
   position: fixed;
-  top: 0;
   left: 0;
   z-index: 2000;
   width: 100%;
@@ -212,7 +211,6 @@ body {
 
 .home:before {
   content: '';
-  top: 0;
   left: 0;
   position: absolute;
   width: 100%;
@@ -552,6 +550,120 @@ body {
   padding-top: 5.8rem;
 }
 
+.screens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 74.8rem;
+}
+
+.screens .screen-img {
+  height: 60.5rem;
+}
+
+.screens .screen1 {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  left: 15rem;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.screens .screen1:hover {
+  z-index: 5;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.screens .screen2 {
+  position: absolute;
+  z-index: 2;
+  left: 33rem;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.screens .screen2:hover {
+  z-index: 5;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.screens .screen3 {
+  position: absolute;
+  z-index: 3;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.screens .screen3:hover {
+  z-index: 5;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.screens .screen4 {
+  position: absolute;
+  z-index: 2;
+  right: 33rem;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.screens .screen4:hover {
+  z-index: 5;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.screens .screen5 {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  right: 15rem;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.screens .screen5:hover {
+  z-index: 5;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.modal-content {
+  height: 600px;
+  background: none;
+  width: 500px;
+}
+
+.modal-header {
+  border: none;
+}
+
+.close span {
+  font-size: 5rem;
+  color: #fff;
+}
+
 .religions {
   padding-top: 5.8rem;
 }
@@ -700,7 +812,7 @@ body {
 
 @media only screen and (max-width: 576px) {
   .input-group {
-    width: 30rem;
+    width: 60.5rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
