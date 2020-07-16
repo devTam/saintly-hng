@@ -661,5 +661,8 @@ body {
   html {
     font-size: 40%;
   }
+  .logo {
+    width: 100px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
