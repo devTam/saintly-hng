@@ -650,9 +650,9 @@ body {
 }
 
 .modal-content {
-  height: 600px;
+  height: 500px;
   background: none;
-  width: 500px;
+  width: 400px;
 }
 
 .modal-header {
