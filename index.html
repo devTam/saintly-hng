@@ -1,3 +1,7 @@
+<!-- <?php
+//including the php page that will process the form
+include('process_form.php');
+?> -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -113,7 +117,7 @@
                 </p>
               </div>
 
-              <div class="coming-soon">
+              <div class="coming-soon" data-aos="zoom-in-up">
                 <p>COMING SOON</p>
                 <p>June 2021</p>
 
@@ -144,7 +148,7 @@
                 <div class="notified-btn">
                   <p>Get notified on release</p>
                   <a href="#get-notified" type="button" class="bounce">
-                    <!-- <svg
+                    <svg
                       width="60"
                       height="60"
                       viewBox="0 0 60 60"
@@ -170,8 +174,7 @@
                         d="M30.0002 17C30.4927 17 30.9649 17.1956 31.3131 17.5438C31.6613 17.892 31.8569 18.3643 31.8569 18.8567V37.4237C31.8569 37.9162 31.6613 38.3884 31.3131 38.7366C30.9649 39.0848 30.4927 39.2804 30.0002 39.2804C29.5078 39.2804 29.0356 39.0848 28.6874 38.7366C28.3392 38.3884 28.1435 37.9162 28.1435 37.4237V18.8567C28.1435 18.3643 28.3392 17.892 28.6874 17.5438C29.0356 17.1956 29.5078 17 30.0002 17Z"
                         fill="white"
                       />
-                    </svg> -->
-                    <ion-icon name="arrow-down-circle-outline" class="icon"></ion-icon>
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -191,6 +194,15 @@
         TRY OUT
       </p>
 
+      <!-- <?php
+      if(isset($success)){
+        echo '<div class="alert alert-success" role="alert" style="font-size: 2rem;">' . $success . '</div>';
+      }elseif(isset($error)){
+        echo '<div class="alert alert-danger" role="alert" style="font-size: 2rem;">' . $error . '</div>';
+      }
+      
+    ?> -->
+
       <form method="post" class="form-inline" data-aos="fade-up">
         <label for="email" class="sr-only">Email</label>
         <div class="input-group">
@@ -198,11 +210,13 @@
             type="email"
             class="form-control"
             id="email"
+            name="email"
             placeholder="Enter Your Email"
           />
           <div class="input-group-append">
             <input
               type="submit"
+              name="submit"
               value="NOTIFY ME"
               class="form-control notify-btn"
             />

@@ -50,11 +50,6 @@ body {
           animation: fadeOut 1s forwards;
 }
 
-.loader-img.hidden {
-  -webkit-animation: trans 1s forwards;
-          animation: trans 1s forwards;
-}
-
 @-webkit-keyframes fadeOut {
   100% {
     opacity: 0;
@@ -139,7 +134,7 @@ body {
 
 /* End of Hamburger menu */
 .nav-custom {
-  background: var(--background-color);
+  background: var(--background-color) !important;
   overflow: hidden;
 }
 
@@ -374,11 +369,11 @@ body {
   color: #fff;
 }
 
-.bounce:hover .icon {
-  color: var(--btn-color) !important;
+.bounce:hover svg {
+  fill: var(--btn-color) !important;
 }
 
-.bounce .icon {
+.bounce .bounce svg {
   font-size: 7rem;
   border-radius: 50%;
   border: none;
@@ -688,6 +683,9 @@ body {
 
 .card {
   border: none;
+  background-color: #F1F1F1 !important;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .card-body {
@@ -703,7 +701,7 @@ body {
 
 .card-img-top {
   height: 25rem;
-  padding: 3px;
+  padding: 3rem;
 }
 
 .footer {
@@ -762,6 +760,21 @@ body {
 .second-footer span {
   margin: 0 5px;
   font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 1450px) {
+  .screen1 {
+    left: 300px !important;
+  }
+  .screen2 {
+    left: 450px !important;
+  }
+  .screen4 {
+    right: 450px !important;
+  }
+  .screen5 {
+    right: 300px !important;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
