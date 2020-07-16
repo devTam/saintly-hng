@@ -434,6 +434,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .desc {
@@ -469,6 +470,11 @@ body {
   padding-top: 5.8rem;
 }
 
+
+.card {
+  border: none;
+}
+
 .card-body {
   background-color: var(--background-color);
   color: var(--color-primary);
@@ -478,6 +484,11 @@ body {
     font-weight: bold;
     text-align: center;
   }
+}
+
+.card-img-top {
+  height: 25rem;
+  padding: 3px;
 }
 
 // Footer
@@ -562,6 +573,23 @@ body {
     padding-left: 0;
   }
 
+  .touch-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .touch, .call, .social {
+    padding: 2rem 3rem;
+    text-align: center;
+  }
+
+  .media-icons img {
+    height: 25px;
+    margin: 0 1rem;
+  }
   
 }
 
@@ -585,6 +613,34 @@ body {
   // html {
   //   font-size: 30%;
   // }
+
+  .input-group {
+    width: 30rem;
+    justify-content: center;
+  }
+
+  .notify-btn {
+    margin-top: 1rem;
+  }
+
+  .touch, .call, .social {
+    padding: 1rem .5rem;
+    text-align: center;
+  }
+
+  .media-icons img {
+    height: 25px;
+    margin:  .5rem;
+  }
+
+  .media-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
 
   
 }
