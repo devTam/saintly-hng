@@ -373,6 +373,8 @@ body {
 .bounce {
   -webkit-animation: bounce .8s infinite alternate;
           animation: bounce .8s infinite alternate;
+  background: none;
+  color: #fff;
 }
 
 .bounce:hover svg {
