@@ -42,7 +42,7 @@ include('process_form.php');
     >
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><img class="logo" src="./assets/img/Logo.svg" alt="Logo"
+          ><img class="logo" src="./assets/img/logo.svg" alt="Logo"
         /></a>
         <button
           class="navbar-toggler"
