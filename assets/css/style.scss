@@ -311,6 +311,7 @@ body {
   .icon {
     font-size: 7rem;
     border-radius: 50%;
+    border: none;
   }
 }
 
@@ -394,6 +395,7 @@ body {
 .number2 {
   font-weight: bold;
   font-size: 25rem;
+  max-width: 100%;
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(42, 157, 143, 0.1);
@@ -649,7 +651,9 @@ body {
   }
 
   // HOW IT WORKS
-
+  .number2 {
+    font-size: 20rem;
+  }
 
 
   .touch-con {
@@ -681,12 +685,16 @@ body {
     width: 100px !important;
   }
 
-  // .number2 {
-  //   font-size: 18rem;
-  // }
+  .number2 {
+    font-size: 18rem;
+  }
 }
 
 @media only screen and (max-width: 576px) {
+
+  html {
+    font-size: 35%;
+  }
 
   .input-group {
     width: 60.5rem;
@@ -698,6 +706,11 @@ body {
   .notify-btn {
     margin-top: 1rem;
   }
+
+  .number2 {
+    font-size: 15rem;
+  }
+
 
   .touch,
   .call,
@@ -716,5 +729,24 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+
+  .auth-vert {
+    padding: 0;
+  }
+
+  .auth {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 497px) {
+  .auth-sec {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 388px) {
+  .first-text, .second-text {
+    font-size: 16px;
   }
 }
