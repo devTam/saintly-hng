@@ -14,12 +14,15 @@
       rel="stylesheet"
     />
 
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.css" />
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Saintly</title>
   </head>
   <body>
@@ -90,7 +93,7 @@
       >
         <div class="container-fluid h-100">
           <div class="row h-100">
-            <div class="col-lg-4 h-100 d-none d-lg-flex" id="mobile-container">
+            <div class="col-lg-4 h-100 d-none d-lg-flex" id="mobile-container" data-aos="zoom-in-up">
               <img
                 src="./assets/img/home-phone.svg"
                 alt="home-image"
@@ -141,7 +144,7 @@
                 <div class="notified-btn">
                   <p>Get notified on release</p>
                   <a href="#get-notified" type="button" class="bounce">
-                    <svg
+                    <!-- <svg
                       width="60"
                       height="60"
                       viewBox="0 0 60 60"
@@ -167,7 +170,8 @@
                         d="M30.0002 17C30.4927 17 30.9649 17.1956 31.3131 17.5438C31.6613 17.892 31.8569 18.3643 31.8569 18.8567V37.4237C31.8569 37.9162 31.6613 38.3884 31.3131 38.7366C30.9649 39.0848 30.4927 39.2804 30.0002 39.2804C29.5078 39.2804 29.0356 39.0848 28.6874 38.7366C28.3392 38.3884 28.1435 37.9162 28.1435 37.4237V18.8567C28.1435 18.3643 28.3392 17.892 28.6874 17.5438C29.0356 17.1956 29.5078 17 30.0002 17Z"
                         fill="white"
                       />
-                    </svg>
+                    </svg> -->
+                    <ion-icon name="arrow-down-circle-outline" class="icon"></ion-icon>
                   </a>
                 </div>
               </div>
@@ -178,7 +182,7 @@
     </section>
 
     <!-- Get notified form -->
-    <section class="get-notified" id="get-notified">
+    <section class="get-notified" id="get-notified" >
       <h1 class="sr-only">Get Notified</h1>
 
       <p class="text-center">
@@ -740,6 +744,10 @@
         </div>
       </div>
     </section>
+
+
+    <!-- IONICON -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
     <!-- Boostrap JS -->
     <script src="./assets/js/popper.js"></script>

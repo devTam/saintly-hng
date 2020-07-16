@@ -374,8 +374,13 @@ body {
   color: #fff;
 }
 
-.bounce:hover svg {
-  fill: var(--btn-color) !important;
+.bounce:hover .icon {
+  color: var(--btn-color) !important;
+}
+
+.bounce .icon {
+  font-size: 7rem;
+  border-radius: 50%;
 }
 
 .get-notified {

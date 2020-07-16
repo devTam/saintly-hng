@@ -304,8 +304,13 @@ body {
   background: none;
   color: #fff;
 
-  &:hover svg {
-    fill: var(--btn-color) !important;
+  &:hover .icon {
+    color: var(--btn-color) !important;
+  }
+
+  .icon {
+    font-size: 7rem;
+    border-radius: 50%;
   }
 }
 
