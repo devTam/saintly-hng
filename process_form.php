@@ -20,11 +20,11 @@ if(isset($_POST['submit'])){
         if(!$result){
             $error = 'ERROR: Unable to execute' . $mysqli ->connect_error;
         }else{
-            $success = 'Thank you for subscribing, we will be in touch!';
+            $success = 'Congratulations! You have been successfully added to our mailing list.';
         }
         //if they are empty, no operations except outputing the error message
     }else{
-        $error = 'You must fill all fields.';
+        $error = 'Please provide a valid email address.';
         
     }
    
