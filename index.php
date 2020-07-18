@@ -759,9 +759,6 @@ include('process_form.php');
     </section>
 
 
-    <!-- IONICON -->
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-
     <!-- Boostrap JS -->
     <script src="./assets/js/popper.js"></script>
     <script src="./assets/js/jquery.js"></script>
