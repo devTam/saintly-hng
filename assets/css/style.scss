@@ -49,9 +49,6 @@ body {
   animation: fadeOut 1s forwards;
 }
 
-// .loader-img.hidden {
-//   animation: trans 1s forwards;
-// }
 
 @keyframes fadeOut {
   100% {
@@ -60,11 +57,6 @@ body {
   }
 }
 
-@keyframes trans {
-  100% {
-    transform: translate(-600px, -300px);
-  }
-}
 
 .loader-img {
   height: 30px;
@@ -191,12 +183,12 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-
+//   TYPED JS container
 .typecon {
   height: 20rem !important;
 }
 
-// typed
+// typed JS cursor
 .typed-cursor {
   opacity: 0;
   visibility: hidden;
@@ -230,7 +222,7 @@ body {
   }
 }
 
-// TIMER
+// COUNT DOWN TIMER
 
 #timer {
   display: flex;
