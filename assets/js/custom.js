@@ -2,10 +2,7 @@
 const preloader = document.querySelector('.preloader');
 const loader = document.querySelector('.loader-img');
 
-window.addEventListener('load', () => {
-    loader.classList.add('hidden');
-    preloader.classList.add('hidden');
-});
+window.addEventListener('load', () => preloader.classList.add('hidden'));
 
 // Implementing dynamic Hamburger Menu
 const navContainer = document.querySelector('.nav-toggle');
